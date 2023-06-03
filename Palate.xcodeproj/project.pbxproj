@@ -16,6 +16,7 @@
 		E0AE508F2A2BE3A4008BBD95 /* PalateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0AE508E2A2BE3A4008BBD95 /* PalateTests.swift */; };
 		E0AE50992A2BE3A4008BBD95 /* PalateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0AE50982A2BE3A4008BBD95 /* PalateUITests.swift */; };
 		E0AE509B2A2BE3A4008BBD95 /* PalateUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0AE509A2A2BE3A4008BBD95 /* PalateUITestsLaunchTests.swift */; };
+		E0AE50A82A2BE471008BBD95 /* WebSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0AE50A72A2BE471008BBD95 /* WebSelector.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		E0AE50942A2BE3A4008BBD95 /* PalateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PalateUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0AE50982A2BE3A4008BBD95 /* PalateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalateUITests.swift; sourceTree = "<group>"; };
 		E0AE509A2A2BE3A4008BBD95 /* PalateUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalateUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E0AE50A72A2BE471008BBD95 /* WebSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSelector.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			children = (
 				E0AE50772A2BE3A3008BBD95 /* PalateApp.swift */,
 				E0AE50792A2BE3A3008BBD95 /* ContentView.swift */,
+				E0AE50A72A2BE471008BBD95 /* WebSelector.swift */,
 				E0AE507B2A2BE3A4008BBD95 /* Assets.xcassets */,
 				E0AE50802A2BE3A4008BBD95 /* Persistence.swift */,
 				E0AE50852A2BE3A4008BBD95 /* Info.plist */,
@@ -265,6 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0AE50A82A2BE471008BBD95 /* WebSelector.swift in Sources */,
 				E0AE50812A2BE3A4008BBD95 /* Persistence.swift in Sources */,
 				E0AE507A2A2BE3A3008BBD95 /* ContentView.swift in Sources */,
 				E0AE50842A2BE3A4008BBD95 /* Palate.xcdatamodeld in Sources */,
