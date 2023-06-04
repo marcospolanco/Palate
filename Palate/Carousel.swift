@@ -22,6 +22,8 @@ struct ImageCarouselView: View {
                 ForEach(imageUrls, id: \.self) { imageUrl in
                     AsyncImage(url: imageUrl, placeholder: {
                         ProgressView()
+                            .frame(maxWidth: 100)
+                            .aspectRatio(contentMode: .fit)
                     }, image: { image in
                         Image(uiImage: image)
 //                            .resizable()
@@ -41,7 +43,10 @@ struct ImageCarouselView: View {
 
 
 struct CarouselView: View {
-    let imageUrls: [URL] = [
+    
+    @State private var toggle = false
+
+    var imageUrls: [URL] = [
         URL(string: "https://cdn.zappy.app/74583ec9e8aeef5b56f50b22be6e35d2.png")!,
         URL(string: "https://cdn.zappy.app/bfb55721b94c43c742ab1e7d84e5271b.png")!
 //        URL(string: "https://image.thum.io/get/https://www.brookings.edu/research/how-artificial-intelligence-is-transforming-the-world/")!,
@@ -51,8 +56,14 @@ struct CarouselView: View {
     let imageHeight: CGFloat = 50
     
     var body: some View {
-            ImageCarouselView(imageUrls: imageUrls, imageWidth: imageWidth, imageHeight: imageHeight)    .frame(maxHeight: 100)
+        ImageCarouselView(imageUrls: imageUrls, imageWidth: imageWidth, imageHeight: imageHeight)    .frame(maxHeight: 100).id(toggle)
 
+    }
+    
+    mutating func addImage(urlString: String) {
+        let url = URL(string: urlString)!
+        imageUrls.insert(url, at: 0)
+        self.toggle.toggle()
     }
 }
 

@@ -10,10 +10,14 @@
 		2E519F88C2FC4FC9C186DC80 /* Pods_PalateTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B5CCBB86E91491457D44101 /* Pods_PalateTests.framework */; };
 		D47994CEEDD9ABB9E4440C35 /* Pods_Palate_PalateUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAEAC0060AC7ADB711AFCE1A /* Pods_Palate_PalateUITests.framework */; };
 		E02D0DDC2A2C11DA0033F69E /* AudioPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02D0DDB2A2C11DA0033F69E /* AudioPlayerView.swift */; };
-		E02D0DDE2A2C124D0033F69E /* david.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E02D0DDD2A2C124D0033F69E /* david.mp3 */; };
 		E02D0DE02A2C63DF0033F69E /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02D0DDF2A2C63DF0033F69E /* SafariView.swift */; };
 		E02D0DE22A2CD9660033F69E /* Carousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02D0DE12A2CD9660033F69E /* Carousel.swift */; };
 		E02D0DE42A2CE37B0033F69E /* Radio.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02D0DE32A2CE37B0033F69E /* Radio.swift */; };
+		E02D0DE62A2D04F90033F69E /* trump.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E02D0DE52A2D04F90033F69E /* trump.mp3 */; };
+		E02D0DE82A2D05350033F69E /* david.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E02D0DE72A2D05350033F69E /* david.mp3 */; };
+		E02D0DEA2A2D0E350033F69E /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02D0DE92A2D0E350033F69E /* MainView.swift */; };
+		E02D0DEC2A2D15590033F69E /* DemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02D0DEB2A2D15590033F69E /* DemoView.swift */; };
+		E02D0DEE2A2D157B0033F69E /* palate_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = E02D0DED2A2D157B0033F69E /* palate_bg.png */; };
 		E0AE50782A2BE3A3008BBD95 /* PalateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0AE50772A2BE3A3008BBD95 /* PalateApp.swift */; };
 		E0AE507A2A2BE3A3008BBD95 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0AE50792A2BE3A3008BBD95 /* ContentView.swift */; };
 		E0AE507C2A2BE3A4008BBD95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0AE507B2A2BE3A4008BBD95 /* Assets.xcassets */; };
@@ -53,10 +57,14 @@
 		7C7250C4F96347610E14ABEA /* Pods-PalateTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PalateTests.debug.xcconfig"; path = "Target Support Files/Pods-PalateTests/Pods-PalateTests.debug.xcconfig"; sourceTree = "<group>"; };
 		944A5583BA85B54B8EBA7368 /* Pods-Palate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Palate.debug.xcconfig"; path = "Target Support Files/Pods-Palate/Pods-Palate.debug.xcconfig"; sourceTree = "<group>"; };
 		E02D0DDB2A2C11DA0033F69E /* AudioPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerView.swift; sourceTree = "<group>"; };
-		E02D0DDD2A2C124D0033F69E /* david.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = david.mp3; path = ../../../Downloads/david.mp3; sourceTree = "<group>"; };
 		E02D0DDF2A2C63DF0033F69E /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
 		E02D0DE12A2CD9660033F69E /* Carousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Carousel.swift; sourceTree = "<group>"; };
 		E02D0DE32A2CE37B0033F69E /* Radio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Radio.swift; sourceTree = "<group>"; };
+		E02D0DE52A2D04F90033F69E /* trump.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = trump.mp3; sourceTree = "<group>"; };
+		E02D0DE72A2D05350033F69E /* david.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = david.mp3; sourceTree = "<group>"; };
+		E02D0DE92A2D0E350033F69E /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		E02D0DEB2A2D15590033F69E /* DemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoView.swift; sourceTree = "<group>"; };
+		E02D0DED2A2D157B0033F69E /* palate_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = palate_bg.png; sourceTree = "<group>"; };
 		E0AE50742A2BE3A3008BBD95 /* Palate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Palate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0AE50772A2BE3A3008BBD95 /* PalateApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalateApp.swift; sourceTree = "<group>"; };
 		E0AE50792A2BE3A3008BBD95 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -151,13 +159,17 @@
 		E0AE50762A2BE3A3008BBD95 /* Palate */ = {
 			isa = PBXGroup;
 			children = (
-				E02D0DDD2A2C124D0033F69E /* david.mp3 */,
+				E02D0DEB2A2D15590033F69E /* DemoView.swift */,
+				E02D0DED2A2D157B0033F69E /* palate_bg.png */,
+				E02D0DE72A2D05350033F69E /* david.mp3 */,
+				E02D0DE52A2D04F90033F69E /* trump.mp3 */,
 				E0AE50772A2BE3A3008BBD95 /* PalateApp.swift */,
 				E0AE50792A2BE3A3008BBD95 /* ContentView.swift */,
 				E02D0DE32A2CE37B0033F69E /* Radio.swift */,
 				E02D0DE12A2CD9660033F69E /* Carousel.swift */,
 				E02D0DDB2A2C11DA0033F69E /* AudioPlayerView.swift */,
 				E0AE50A72A2BE471008BBD95 /* WebSelector.swift */,
+				E02D0DE92A2D0E350033F69E /* MainView.swift */,
 				E0AE507B2A2BE3A4008BBD95 /* Assets.xcassets */,
 				E0AE50802A2BE3A4008BBD95 /* Persistence.swift */,
 				E0AE50852A2BE3A4008BBD95 /* Info.plist */,
@@ -303,8 +315,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E0AE507F2A2BE3A4008BBD95 /* Preview Assets.xcassets in Resources */,
-				E02D0DDE2A2C124D0033F69E /* david.mp3 in Resources */,
+				E02D0DE82A2D05350033F69E /* david.mp3 in Resources */,
+				E02D0DEE2A2D157B0033F69E /* palate_bg.png in Resources */,
 				E0AE507C2A2BE3A4008BBD95 /* Assets.xcassets in Resources */,
+				E02D0DE62A2D04F90033F69E /* trump.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,11 +449,13 @@
 				E0AE50A82A2BE471008BBD95 /* WebSelector.swift in Sources */,
 				E0AE50812A2BE3A4008BBD95 /* Persistence.swift in Sources */,
 				E02D0DDC2A2C11DA0033F69E /* AudioPlayerView.swift in Sources */,
+				E02D0DEA2A2D0E350033F69E /* MainView.swift in Sources */,
 				E0AE507A2A2BE3A3008BBD95 /* ContentView.swift in Sources */,
 				E0AE50842A2BE3A4008BBD95 /* Palate.xcdatamodeld in Sources */,
 				E02D0DE42A2CE37B0033F69E /* Radio.swift in Sources */,
 				E0AE50782A2BE3A3008BBD95 /* PalateApp.swift in Sources */,
 				E02D0DE02A2C63DF0033F69E /* SafariView.swift in Sources */,
+				E02D0DEC2A2D15590033F69E /* DemoView.swift in Sources */,
 				E02D0DE22A2CD9660033F69E /* Carousel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -609,7 +625,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -641,7 +657,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

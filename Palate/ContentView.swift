@@ -13,27 +13,43 @@ import AVKit
 import SwiftAudioPlayer
 
 
-struct SomeView: View {
+struct PreferencesView: View {
 
-    @State var showWebView = false
+    @State private var sliderValue1: Double = 0.5
+    @State private var sliderValue2: Double = 0.25
+    @State private var sliderValue3: Double = 0.75
 
     var body: some View {
-        ZStack {
-            Button(action: {
-                self.showWebView.toggle()
-
-            }) {
-                Text("Go To WebView")
-                    .padding()
-                    .foregroundColor(.black)
-                    .font(.title)
+        VStack {
+            HStack{
+                Text("Time:")
+                
+                Slider(value: $sliderValue1)
             }
-            .sheet(isPresented: $showWebView, content: {
-                WebView(url: URL(string: "https://www.apple.com/")!) })
-
+            HStack{
+                Text("Complexity:")
+                
+                Slider(value: $sliderValue2)
+            }
+            HStack  {
+                Text("Language:")
+                
+                Slider(value: $sliderValue3)
+            }
         }
     }
 }
+
+struct MyButtonStyle: ButtonStyle {
+ func makeBody(configuration: Self.Configuration) -> some View {
+  configuration.label
+   .padding()
+   .foregroundColor(.black)
+   .background(configuration.isPressed ? Color.clear : Color.clear)
+   .cornerRadius(8.0)
+ }
+}
+
 
 struct ContentView: View {
     
@@ -41,96 +57,87 @@ struct ContentView: View {
     @State var player: AVAudioPlayer?
     @State private var url = URL(string: "https://www.google.com")
     
-    @State private var sliderValue1: Double = 0.5
-    @State private var sliderValue2: Double = 0.25
-    @State private var sliderValue3: Double = 0.75
-
+    static let playerView = AudioPlayerView()
     
+
     @Environment(\.managedObjectContext) private var viewContext
 
     @FetchRequest(
         sortDescriptors: [NSSortDescriptor(keyPath: \Item.url, ascending: true)],
         animation: .default)
     private var items: FetchedResults<Item>
+    
+//    @Binding var text: String
+    
+    
 
     var body: some View {
         NavigationView {
-            
-            VStack {
-                Text("Palate")
-
-//                List {
-//                    ForEach(items) { item in
-//                        NavigationLink {
-//                            Text("Item at \(item.url!, formatter: itemFormatter)")
-//                        } label: {
-//                            Text(item.url!, formatter: itemFormatter)
-//                        }
-//                    }
-//                    .onDelete(perform: deleteItems)
-//                }
-//
-                CarouselView()
-                    .frame(maxHeight: 100)
-                    .padding()
-                
+            GeometryReader {metrics in
                 VStack {
-                    HStack{
-                        Text("Time:")
-                        
-                        Slider(value: $sliderValue1)
+                    
+                    Button(action: {
+                        // Add your button action here
+                        print("Button tapped")
+                    }) {
+                        if let url = Bundle.main.url(forResource: "palate_bg", withExtension: "png"),
+                           let uiImage = UIImage(contentsOfFile: url.path) {
+                            Image(uiImage: uiImage)
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .edgesIgnoringSafeArea(.bottom)
                     }
-                        .padding()
-                    HStack{
-                        Text("Complexity:")
+                    } .buttonStyle(MyButtonStyle())
+
+
                         
-                        Slider(value: $sliderValue2)
-                    }
-                    HStack  {
-                        Text("Language:")
                         
-                        Slider(value: $sliderValue3)
-                    }
-                }.background(Color.white)
+
+                    ContentView.playerView.safeAreaInset(edge: .bottom, content:{
+                        
+                    }).frame(height: metrics.size.height * 0.2)
+                }
+            
+            
+            .toolbar {
 
                 
-                RadioView()
-                AudioPlayerView()
-//            HStack {
-//                Button(action: {
-//                        guard let url = URL(string: "https://palate-output.s3.us-east-2.amazonaws.com/david.mp3") else {return}
-//                        SAPlayer.shared.startRemoteAudio(withRemoteUrl: url)
-//                        SAPlayer.shared.play()
-//
-//                }) {
-//                    Image(systemName: "play.fill")
+                //                    ZStack {
+                //
+                //                        }
+                //
+                //                        HStack {
+                ////                            TextField("Enter text", text: $text)
+                ////                                            .textFieldStyle(RoundedBorderTextFieldStyle())
+                //                            Button(action: {
+                //                                // Closure will be called once user taps your button
+                ////                                print(self.$text)
+                //                            }) {
+                //                                Text("SEND")
+                //                            }
+                //                        }
+                                        
+                                    }
+                //                    CarouselView().frame(height: metrics.size.height * 0.3)
+                //                    PreferencesView().frame(height: metrics.size.height * 0.2)
+                //                    RadioView().frame(height: metrics.size.height * 0.2)
+                
+//                ToolbarItem {
+//                    Button(action: addItem) {
+//                        Label("Add Item", systemImage: "plus")
+//                    }.disabled(false)
 //                }
-//
-//                Button(action: {
-//                    self.player?.pause()
-//                }) {
-//                    Image(systemName: "pause.fill")
-//                }
+            }
+            
+            .fullScreenCover(isPresented: $showWebView, content: {
+                BrowserViewWrapper(isPresented: $showWebView, urlString: url?.absoluteString ?? "https://google.com")
+            })
+            
+//            .sheet(isPresented: $showWebView) {
+//                WebView(url: url!)
 //            }
-            .padding()
-            }
-            .toolbar {
-                ToolbarItem(placement: .navigationBarLeading) {
-                    Text("Palate")
-                }
-                ToolbarItem {
-                    Button(action: addItem) {
-                        Label("Add Item", systemImage: "plus")
-                    }.disabled(false)
-                }
-            }
             
-            .sheet(isPresented: $showWebView) {
-                WebView(url: url!)
-            }
-            
-            Text("Select an item")
-        }
+        }.background(Color.green)
         
         
     }
@@ -175,11 +182,12 @@ private let itemFormatter: DateFormatter = {
     return formatter
 }()
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
-    }
-}
+//struct ContentView_Previews: PreviewProvider {
+//    @Binding var defaultString:String
+//    static var previews: some View {
+//        ContentView(text: $defaultString).environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+//    }
+//}
 
 class ListManager: NSObject {
     static let shared = ListManager()
