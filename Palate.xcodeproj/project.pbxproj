@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E519F88C2FC4FC9C186DC80 /* Pods_PalateTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B5CCBB86E91491457D44101 /* Pods_PalateTests.framework */; };
+		D47994CEEDD9ABB9E4440C35 /* Pods_Palate_PalateUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAEAC0060AC7ADB711AFCE1A /* Pods_Palate_PalateUITests.framework */; };
+		E02D0DDC2A2C11DA0033F69E /* AudioPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02D0DDB2A2C11DA0033F69E /* AudioPlayerView.swift */; };
+		E02D0DDE2A2C124D0033F69E /* david.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E02D0DDD2A2C124D0033F69E /* david.mp3 */; };
+		E02D0DE02A2C63DF0033F69E /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02D0DDF2A2C63DF0033F69E /* SafariView.swift */; };
+		E02D0DE22A2CD9660033F69E /* Carousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02D0DE12A2CD9660033F69E /* Carousel.swift */; };
+		E02D0DE42A2CE37B0033F69E /* Radio.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02D0DE32A2CE37B0033F69E /* Radio.swift */; };
 		E0AE50782A2BE3A3008BBD95 /* PalateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0AE50772A2BE3A3008BBD95 /* PalateApp.swift */; };
 		E0AE507A2A2BE3A3008BBD95 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0AE50792A2BE3A3008BBD95 /* ContentView.swift */; };
 		E0AE507C2A2BE3A4008BBD95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0AE507B2A2BE3A4008BBD95 /* Assets.xcassets */; };
@@ -17,6 +24,7 @@
 		E0AE50992A2BE3A4008BBD95 /* PalateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0AE50982A2BE3A4008BBD95 /* PalateUITests.swift */; };
 		E0AE509B2A2BE3A4008BBD95 /* PalateUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0AE509A2A2BE3A4008BBD95 /* PalateUITestsLaunchTests.swift */; };
 		E0AE50A82A2BE471008BBD95 /* WebSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0AE50A72A2BE471008BBD95 /* WebSelector.swift */; };
+		F416FEA9AF6ED9E5280198B9 /* Pods_Palate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65E61E6DDB623524A6D0E710 /* Pods_Palate.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +45,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0CC1BF7D6A140FD9FFCB06BB /* Pods-Palate-PalateUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Palate-PalateUITests.release.xcconfig"; path = "Target Support Files/Pods-Palate-PalateUITests/Pods-Palate-PalateUITests.release.xcconfig"; sourceTree = "<group>"; };
+		11B2CE809035DCDF47A3D8D9 /* Pods-Palate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Palate.release.xcconfig"; path = "Target Support Files/Pods-Palate/Pods-Palate.release.xcconfig"; sourceTree = "<group>"; };
+		5B5CCBB86E91491457D44101 /* Pods_PalateTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PalateTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		65E61E6DDB623524A6D0E710 /* Pods_Palate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Palate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C09E61FE66D92B6AF9C1D4D /* Pods-PalateTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PalateTests.release.xcconfig"; path = "Target Support Files/Pods-PalateTests/Pods-PalateTests.release.xcconfig"; sourceTree = "<group>"; };
+		7C7250C4F96347610E14ABEA /* Pods-PalateTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PalateTests.debug.xcconfig"; path = "Target Support Files/Pods-PalateTests/Pods-PalateTests.debug.xcconfig"; sourceTree = "<group>"; };
+		944A5583BA85B54B8EBA7368 /* Pods-Palate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Palate.debug.xcconfig"; path = "Target Support Files/Pods-Palate/Pods-Palate.debug.xcconfig"; sourceTree = "<group>"; };
+		E02D0DDB2A2C11DA0033F69E /* AudioPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerView.swift; sourceTree = "<group>"; };
+		E02D0DDD2A2C124D0033F69E /* david.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = david.mp3; path = ../../../Downloads/david.mp3; sourceTree = "<group>"; };
+		E02D0DDF2A2C63DF0033F69E /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
+		E02D0DE12A2CD9660033F69E /* Carousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Carousel.swift; sourceTree = "<group>"; };
+		E02D0DE32A2CE37B0033F69E /* Radio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Radio.swift; sourceTree = "<group>"; };
 		E0AE50742A2BE3A3008BBD95 /* Palate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Palate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0AE50772A2BE3A3008BBD95 /* PalateApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalateApp.swift; sourceTree = "<group>"; };
 		E0AE50792A2BE3A3008BBD95 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -51,6 +71,8 @@
 		E0AE50982A2BE3A4008BBD95 /* PalateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalateUITests.swift; sourceTree = "<group>"; };
 		E0AE509A2A2BE3A4008BBD95 /* PalateUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalateUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		E0AE50A72A2BE471008BBD95 /* WebSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSelector.swift; sourceTree = "<group>"; };
+		F457320995AD17963D112472 /* Pods-Palate-PalateUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Palate-PalateUITests.debug.xcconfig"; path = "Target Support Files/Pods-Palate-PalateUITests/Pods-Palate-PalateUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		FAEAC0060AC7ADB711AFCE1A /* Pods_Palate_PalateUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Palate_PalateUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F416FEA9AF6ED9E5280198B9 /* Pods_Palate.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E519F88C2FC4FC9C186DC80 /* Pods_PalateTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +96,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D47994CEEDD9ABB9E4440C35 /* Pods_Palate_PalateUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		210EB5554C93813CE00F9046 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				65E61E6DDB623524A6D0E710 /* Pods_Palate.framework */,
+				FAEAC0060AC7ADB711AFCE1A /* Pods_Palate_PalateUITests.framework */,
+				5B5CCBB86E91491457D44101 /* Pods_PalateTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		85827043C1E6B8D98FFFC398 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				944A5583BA85B54B8EBA7368 /* Pods-Palate.debug.xcconfig */,
+				11B2CE809035DCDF47A3D8D9 /* Pods-Palate.release.xcconfig */,
+				F457320995AD17963D112472 /* Pods-Palate-PalateUITests.debug.xcconfig */,
+				0CC1BF7D6A140FD9FFCB06BB /* Pods-Palate-PalateUITests.release.xcconfig */,
+				7C7250C4F96347610E14ABEA /* Pods-PalateTests.debug.xcconfig */,
+				7C09E61FE66D92B6AF9C1D4D /* Pods-PalateTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		E0AE506B2A2BE3A3008BBD95 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +133,8 @@
 				E0AE508D2A2BE3A4008BBD95 /* PalateTests */,
 				E0AE50972A2BE3A4008BBD95 /* PalateUITests */,
 				E0AE50752A2BE3A3008BBD95 /* Products */,
+				85827043C1E6B8D98FFFC398 /* Pods */,
+				210EB5554C93813CE00F9046 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,14 +151,19 @@
 		E0AE50762A2BE3A3008BBD95 /* Palate */ = {
 			isa = PBXGroup;
 			children = (
+				E02D0DDD2A2C124D0033F69E /* david.mp3 */,
 				E0AE50772A2BE3A3008BBD95 /* PalateApp.swift */,
 				E0AE50792A2BE3A3008BBD95 /* ContentView.swift */,
+				E02D0DE32A2CE37B0033F69E /* Radio.swift */,
+				E02D0DE12A2CD9660033F69E /* Carousel.swift */,
+				E02D0DDB2A2C11DA0033F69E /* AudioPlayerView.swift */,
 				E0AE50A72A2BE471008BBD95 /* WebSelector.swift */,
 				E0AE507B2A2BE3A4008BBD95 /* Assets.xcassets */,
 				E0AE50802A2BE3A4008BBD95 /* Persistence.swift */,
 				E0AE50852A2BE3A4008BBD95 /* Info.plist */,
 				E0AE50822A2BE3A4008BBD95 /* Palate.xcdatamodeld */,
 				E0AE507D2A2BE3A4008BBD95 /* Preview Content */,
+				E02D0DDF2A2C63DF0033F69E /* SafariView.swift */,
 			);
 			path = Palate;
 			sourceTree = "<group>";
@@ -145,9 +200,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E0AE509E2A2BE3A4008BBD95 /* Build configuration list for PBXNativeTarget "Palate" */;
 			buildPhases = (
+				1C89B281826F9DB5AD4A283A /* [CP] Check Pods Manifest.lock */,
 				E0AE50702A2BE3A3008BBD95 /* Sources */,
 				E0AE50712A2BE3A3008BBD95 /* Frameworks */,
 				E0AE50722A2BE3A3008BBD95 /* Resources */,
+				3026588B4DFFC0134D4F71F1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -162,6 +219,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E0AE50A12A2BE3A4008BBD95 /* Build configuration list for PBXNativeTarget "PalateTests" */;
 			buildPhases = (
+				E980BD05BA5D2AECBBDFEF03 /* [CP] Check Pods Manifest.lock */,
 				E0AE50862A2BE3A4008BBD95 /* Sources */,
 				E0AE50872A2BE3A4008BBD95 /* Frameworks */,
 				E0AE50882A2BE3A4008BBD95 /* Resources */,
@@ -180,9 +238,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E0AE50A42A2BE3A4008BBD95 /* Build configuration list for PBXNativeTarget "PalateUITests" */;
 			buildPhases = (
+				6344191D66EBC0A6112AC825 /* [CP] Check Pods Manifest.lock */,
 				E0AE50902A2BE3A4008BBD95 /* Sources */,
 				E0AE50912A2BE3A4008BBD95 /* Frameworks */,
 				E0AE50922A2BE3A4008BBD95 /* Resources */,
+				5B958EE23F3B6D781A050769 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -243,6 +303,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E0AE507F2A2BE3A4008BBD95 /* Preview Assets.xcassets in Resources */,
+				E02D0DDE2A2C124D0033F69E /* david.mp3 in Resources */,
 				E0AE507C2A2BE3A4008BBD95 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,6 +324,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1C89B281826F9DB5AD4A283A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Palate-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3026588B4DFFC0134D4F71F1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Palate/Pods-Palate-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Palate/Pods-Palate-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Palate/Pods-Palate-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5B958EE23F3B6D781A050769 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Palate-PalateUITests/Pods-Palate-PalateUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Palate-PalateUITests/Pods-Palate-PalateUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Palate-PalateUITests/Pods-Palate-PalateUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6344191D66EBC0A6112AC825 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Palate-PalateUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E980BD05BA5D2AECBBDFEF03 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PalateTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E0AE50702A2BE3A3008BBD95 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -270,9 +434,13 @@
 			files = (
 				E0AE50A82A2BE471008BBD95 /* WebSelector.swift in Sources */,
 				E0AE50812A2BE3A4008BBD95 /* Persistence.swift in Sources */,
+				E02D0DDC2A2C11DA0033F69E /* AudioPlayerView.swift in Sources */,
 				E0AE507A2A2BE3A3008BBD95 /* ContentView.swift in Sources */,
 				E0AE50842A2BE3A4008BBD95 /* Palate.xcdatamodeld in Sources */,
+				E02D0DE42A2CE37B0033F69E /* Radio.swift in Sources */,
 				E0AE50782A2BE3A3008BBD95 /* PalateApp.swift in Sources */,
+				E02D0DE02A2C63DF0033F69E /* SafariView.swift in Sources */,
+				E02D0DE22A2CD9660033F69E /* Carousel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,11 +593,13 @@
 		};
 		E0AE509F2A2BE3A4008BBD95 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 944A5583BA85B54B8EBA7368 /* Pods-Palate.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 10;
 				DEVELOPMENT_ASSET_PATHS = "\"Palate/Preview Content\"";
 				DEVELOPMENT_TEAM = Y57L54HDUX;
 				ENABLE_PREVIEWS = YES;
@@ -439,11 +609,12 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.visorlabs.palate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -454,11 +625,13 @@
 		};
 		E0AE50A02A2BE3A4008BBD95 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11B2CE809035DCDF47A3D8D9 /* Pods-Palate.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 10;
 				DEVELOPMENT_ASSET_PATHS = "\"Palate/Preview Content\"";
 				DEVELOPMENT_TEAM = Y57L54HDUX;
 				ENABLE_PREVIEWS = YES;
@@ -468,11 +641,12 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.visorlabs.palate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -483,6 +657,7 @@
 		};
 		E0AE50A22A2BE3A4008BBD95 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C7250C4F96347610E14ABEA /* Pods-PalateTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -502,6 +677,7 @@
 		};
 		E0AE50A32A2BE3A4008BBD95 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C09E61FE66D92B6AF9C1D4D /* Pods-PalateTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -521,6 +697,7 @@
 		};
 		E0AE50A52A2BE3A4008BBD95 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F457320995AD17963D112472 /* Pods-Palate-PalateUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -538,6 +715,7 @@
 		};
 		E0AE50A62A2BE3A4008BBD95 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0CC1BF7D6A140FD9FFCB06BB /* Pods-Palate-PalateUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

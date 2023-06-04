@@ -13,6 +13,7 @@ struct PalateApp: App {
 
     var body: some Scene {
         WindowGroup {
+//            AudioPlayerView()
             ContentView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
